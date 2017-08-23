@@ -18,3 +18,8 @@ gvm use go1.4
 export GOROOT_BOOTSTRAP=$GOROOT
 gvm install go1.8.3
 ```
+
+### 设置默认使用的go版本
+```
+gvm use go1.8.3 --default
+```
