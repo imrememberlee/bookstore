@@ -3,6 +3,7 @@
 ```
 bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 ```
+Or if you are using zsh just change bash with zsh
 
 ### 由于大家都懂得原因需要先修改镜像来下载安装包
 可将 GO_SOURCE_URL修改为github上的源码镜像
@@ -22,4 +23,16 @@ gvm install go1.8.3
 ### 设置默认使用的go版本
 ```
 gvm use go1.8.3 --default
+```
+
+### Mac OS X Requirements
+```
+xcode-select --install
+brew update
+brew install mercurial
+```
+
+### Debian/Ubuntu Requirements
+```
+sudo apt-get install curl git mercurial make binutils bison gcc build-essential
 ```
